@@ -13,7 +13,7 @@ $(document).ready( function() {
                let wf = "";
                $.each(data.weather, function(index, val) {
                     wf += '<p><b>' + data.name + '</b><img src=' + val.icon + '.png></p>'+
-                    '<p><b>' + data.main.temp + '</b></p>' + val.main + ', ' + val.description;
+                    '<p><b>' + Math.ceil(data.main.temp - 273.15) + ' °C' + '</b></p>' + val.main + ', ' + val.description;
                });
                $('#showWeather').html(wf);
            }
