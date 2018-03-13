@@ -134,6 +134,10 @@ img {
     outline: none;
 }
 
+.submit:hover {
+    background-color: rgb(49,33,33);
+}
+
 input:focus::-webkit-input-placeholder {
     opacity: 0;
 }
