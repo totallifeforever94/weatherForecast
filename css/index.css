@@ -139,3 +139,17 @@ img {
 		font-size: 3em;
 	}
 }
+
+@media (max-width: 400px){
+    .main-title {
+    width: 100%;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    color: #f9f1e9;
+    text-align: center;
+    top: 25%;
+    left: 50%;
+    transform: translate3d(-50%,-50%,0);
+    }
+}
