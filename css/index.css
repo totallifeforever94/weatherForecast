@@ -134,6 +134,10 @@ img {
     outline: none;
 }
 
+input:focus::-webkit-input-placeholder {
+    opacity: 0;
+}
+
 @media (max-width : 768px) {
 	.demo-1 .main-title  {
 		font-size: 3em;
