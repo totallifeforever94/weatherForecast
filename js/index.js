@@ -16,6 +16,7 @@ $(document).ready( function() {
                     '<p><b>' + Math.ceil(data.main.temp - 273.15) + ' °C' + '</b></p>' + val.main + ', ' + val.description;
                });
                $('#showWeather').html(wf);
+               $('#city').val('');
            }
            
         });
