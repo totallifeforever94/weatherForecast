@@ -1,6 +1,5 @@
 $(document).ready( function() {
     $('#getWeather').click( function() {
-        
        let city = $('#city').val();
        let key = '0520485efb9e035d7d5f37715a9db23d';
        
@@ -8,13 +7,13 @@ $(document).ready( function() {
            url: 'https://api.openweathermap.org/data/2.5/weather',
            dataType: 'json',
            metho: 'GET',
-           data: {q: city, appid: key, untis: 'metric'},
+           data: {q: city, appid: key},
            
            success: function(data) {
                let wf = "";
                $.each(data.weather, function(index, val) {
                     wf += '<p><b>' + data.name + '</b><img src=' + val.icon + '.png></p>'+
-                    data.main.temp + '&deg;C' + ' | ' + val.main + ', ' + val.description;
+                    '<p><b>' + data.main.temp + '</b></p>' + val.main + ', ' + val.description;
                });
                $('#showWeather').html(wf);
            }

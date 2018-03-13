@@ -3,6 +3,14 @@ body {
     max-width: 1500px;
 }
 
+p {
+    margin: 0;
+}
+
+::placeholder {
+    font-family: "Quicksand";
+}
+
 #demo-canvas {
     height: 100vh;
 }
@@ -27,7 +35,7 @@ body {
 	padding: 0;
 	color: #f9f1e9;
 	text-align: center;
-	top: 40%;
+	top: 30%;
 	left: 50%;
 	transform: translate3d(-50%,-50%,0);
 }
@@ -39,23 +47,47 @@ body {
 	font-family: "Quicksand";
 }
 
-#weatherForm {
-    position: absolute;
-    top: 60%;
-}
-
 #showWeather {
+    font-family: "Quicksand";
     color: #ebebeb;
     width: 100%;
     text-align: center;
     display: block;
     position: absolute;
-    top: 70%;
+    top: 65%;
     z-index: 50;
+    font-size: 35px;
 }
 
 .main-title .thin {
 	font-weight: 200;
+}
+
+.input-city {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    color: #232323;
+    /* text-align: center; */
+    top: 46%;
+    left: 50%;
+    transform: translate3d(-50%,-50%,0);
+    width: 30%;
+    height: 35px;
+}
+
+.submit {
+    font-family: "Quicksand";
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    color: #232323;
+    text-align: center;
+    top: 53%;
+    left: 50%;
+    transform: translate3d(-50%,-50%,0);
+    width: 100px;
+    height: 35px;
 }
 
 @media (max-width : 768px) {
